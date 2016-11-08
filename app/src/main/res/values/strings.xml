@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">XunJian01</string>
+    <string name="button_mission">我的任务</string>
+    <string name="button_map">地图操作</string>
+    <string name="button_record">上报记录</string>
+    <string name="button_back">返回</string>
+    <string name="textView_mission">我的任务</string>
+    <string name="button_search">查询</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
