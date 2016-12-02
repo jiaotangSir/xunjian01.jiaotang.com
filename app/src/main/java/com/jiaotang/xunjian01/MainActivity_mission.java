@@ -1,6 +1,5 @@
 package com.jiaotang.xunjian01;
 
-import android.content.Context;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -11,9 +10,8 @@ import android.os.Bundle;
 import android.view.View;
 
 
-import com.jiaotang.xunjian01.mission.BlankFragment;
-import com.jiaotang.xunjian01.mission.BlankFragment2;
-
+import com.jiaotang.xunjian01.mission.MissionCompletedFragment;
+import com.jiaotang.xunjian01.mission.MissionUncompletedFragment;
 
 import java.util.ArrayList;
 
@@ -33,15 +31,13 @@ public class MainActivity_mission extends AppCompatActivity {
         /**这里是加入viewPager*/
         tabLayout = (TabLayout) findViewById(R.id.tabLayout);
         viewPager = (ViewPager) findViewById(R.id.viewPager_mission);
-
-        mFragmentList.add(new BlankFragment());
-        mFragmentList.add(new BlankFragment2());
+//
+        mFragmentList.add(new MissionUncompletedFragment());
+        mFragmentList.add(new MissionCompletedFragment());
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
 
         viewPager.setAdapter(mSectionsPagerAdapter);
         tabLayout.setupWithViewPager(viewPager);
-
-
 
 
     }

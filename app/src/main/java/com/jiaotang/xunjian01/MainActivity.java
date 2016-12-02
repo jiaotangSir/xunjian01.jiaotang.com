@@ -31,6 +31,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         b3.setOnClickListener(this);
 
 
+        //初始化数据
+        DataMessage dataMessage = DataMessage.getSingleMessage();
+        dataMessage.initUnmissionData();
 
 
 

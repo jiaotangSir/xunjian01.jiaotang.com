@@ -42,7 +42,7 @@ public class MissionConditionAdapter extends ArrayAdapter<MissionCondition> {
         TextView missionPlace = (TextView) view.findViewById(R.id.textView_missionPlace);
         missionId.setText(missionCondition.getMissionId());
         missionPlace.setText(missionCondition.getMissionPlace());
-        missionCompletionStatus.setText(missionCondition.getMissionCompletionStatus());
+        missionCompletionStatus.setText(missionCondition.getMissionStatus());
 
         return view;
     }

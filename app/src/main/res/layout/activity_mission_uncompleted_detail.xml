@@ -143,6 +143,7 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:text="提交"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:onClick="clickMissionUncompletedDetailSubmit"/>
 
 </RelativeLayout>
